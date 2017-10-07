@@ -20,6 +20,7 @@ public class VentanaPrincipal extends JFrame{
 		 iniciar();
 		 componente();
 		 setVisible(true);
+		 setResizable(false);
 		 //setLocationRelativeTo(null);
 		// pack();
 		// Centrar la ventana
