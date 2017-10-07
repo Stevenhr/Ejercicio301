@@ -1,11 +1,17 @@
 
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.*;
 
 
+
+
 public class VentanaPrincipal extends JFrame{
+	
+	PanelImagen panelImagen;
+	
 	
 	public VentanaPrincipal(){
 		 super("Ventana JFrame Principal");
@@ -34,7 +40,8 @@ public class VentanaPrincipal extends JFrame{
 	}
 	public void componente() {
 			
-			
+		panelImagen = new PanelImagen( );
+        add( panelImagen, BorderLayout.NORTH );	
 		
 	        
 		
