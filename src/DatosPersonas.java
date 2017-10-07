@@ -1,6 +1,6 @@
 
 public class DatosPersonas {
-	private String nombre_uno;
+	private String nombre_usuario;
 	private String apellido;
 	private int cedula;
 	private int edad;
@@ -14,11 +14,11 @@ public class DatosPersonas {
 		
 		
 	}
-	public String getnombre() {
-	    return nombre_uno;
+	public String getnombre_usuario() {
+	    return nombre_usuario;
 	}
-	public void setnombre(String nombre) {
-	    this.nombre_uno = nombre;
+	public void setnombre(String nombre_usuario) {
+	    this.nombre_usuario = nombre_usuario;
 	}
 	public String getapellido() {
 	    return apellido;
