@@ -13,6 +13,8 @@ public class VentanaPrincipal extends JFrame{
 	PanelImagen panelImagen;
 	
 	
+	RegistroUsuario registro = new  RegistroUsuario(this);
+	
 	public VentanaPrincipal(){
 		 super("Ventana JFrame Principal");
 		 iniciar();
@@ -39,6 +41,10 @@ public class VentanaPrincipal extends JFrame{
 		return this;
 	}
 	public void componente() {
+		 registro = new RegistroUsuario(this);
+		 this.add(registro,BorderLayout.WEST);
+		 
+		
 			
 		panelImagen = new PanelImagen( );
         add( panelImagen, BorderLayout.NORTH );	
