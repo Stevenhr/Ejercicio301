@@ -6,7 +6,12 @@ import java.awt.Dimension;
 import javax.swing.*;
 
 
+
+
 public class VentanaPrincipal extends JFrame{
+	
+	PanelImagen panelImagen;
+	
 	
 	RegistroUsuario registro = new  RegistroUsuario(this);
 	PanelAbajo abajo = new PanelAbajo();
@@ -16,6 +21,7 @@ public class VentanaPrincipal extends JFrame{
 		 iniciar();
 		 componente();
 		 setVisible(true);
+		 setResizable(false);
 		 //setLocationRelativeTo(null);
 		// pack();
 		// Centrar la ventana
@@ -45,7 +51,8 @@ public class VentanaPrincipal extends JFrame{
 		 
 		
 			
-			
+		panelImagen = new PanelImagen( );
+        add( panelImagen, BorderLayout.NORTH );	
 		
 	        
 		
