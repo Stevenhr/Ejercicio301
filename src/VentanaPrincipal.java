@@ -1,11 +1,14 @@
 
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.*;
 
 
 public class VentanaPrincipal extends JFrame{
+	
+	RegistroUsuario registro = new  RegistroUsuario(this);
 	
 	public VentanaPrincipal(){
 		 super("Ventana JFrame Principal");
@@ -33,6 +36,10 @@ public class VentanaPrincipal extends JFrame{
 		return this;
 	}
 	public void componente() {
+		 registro = new RegistroUsuario(this);
+		 this.add(registro,BorderLayout.EAST);
+		 
+		
 			
 			
 		

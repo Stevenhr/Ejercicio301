@@ -4,8 +4,12 @@ public class RegistroUsuario extends JPanel {
 
 	JTextField campo1,campo2,campo3,campo4,campo5;
 	JButton boton;
+	GridBagConstraints retriccion;
+	Insets inserciones;
+	VentanaPrincipal v;
 	
-		public RegistroUsuario() {
+		public RegistroUsuario(VentanaPrincipal _v) {
+			this.v = _v;
 			
 			setLayout(new GridBagLayout());
 			GridBagConstraints restriccion;
