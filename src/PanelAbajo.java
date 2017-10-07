@@ -14,10 +14,7 @@ import javax.swing.border.TitledBorder;
 
 public class PanelAbajo extends JPanel  {
     
-	private static final String OPCION_1 = "OPCION_1";
-    private static final String OPCION_2 = "OPCION_2";
-    private JButton btnOpcion1;
-	private JButton btnOpcion2;
+	
 	
 	public PanelAbajo( )
     {
@@ -29,7 +26,7 @@ public class PanelAbajo extends JPanel  {
 	        ImageIcon icono2 = new ImageIcon( "img/orange.png" );
 	        
 	        JLabel imagen3 = new JLabel( );
-	        ImageIcon icono3 = new ImageIcon( "img/Rede.png" );
+	        ImageIcon icono3 = new ImageIcon( "img/Red.png" );
 	        
 	        
 	        imagen.setIcon( icono );
@@ -37,12 +34,14 @@ public class PanelAbajo extends JPanel  {
 	        imagen3.setIcon( icono3 );
 	        //Define el icono que mostrará este componente.
 	        imagen.setHorizontalAlignment( JLabel.CENTER );
-	        imagen2.setHorizontalAlignment( JLabel.WEST );
-	        imagen3.setHorizontalAlignment( JLabel.EAST );
+	        //imagen2.setHorizontalAlignment( JLabel.WEST );
+	        //imagen3.setHorizontalAlignment( JLabel.EAST );
 	        
 	        //Establece la alineación del contenido de la etiqueta a lo largo del eje X.
 	        
 	        add( imagen, BorderLayout.CENTER );
+	        add( imagen2, BorderLayout.WEST );
+	        add( imagen3, BorderLayout.EAST );
 	        //ubicacion de mi imagen dentro del panel
 	        
 	        setBackground( Color.DARK_GRAY );

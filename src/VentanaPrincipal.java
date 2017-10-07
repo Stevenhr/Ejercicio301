@@ -9,6 +9,7 @@ import javax.swing.*;
 public class VentanaPrincipal extends JFrame{
 	
 	RegistroUsuario registro = new  RegistroUsuario(this);
+	PanelAbajo abajo = new PanelAbajo();
 	
 	public VentanaPrincipal(){
 		 super("Ventana JFrame Principal");
@@ -37,7 +38,10 @@ public class VentanaPrincipal extends JFrame{
 	}
 	public void componente() {
 		 registro = new RegistroUsuario(this);
-		 this.add(registro,BorderLayout.WEST);
+		 this.add(registro,BorderLayout.EAST);
+		 
+		 abajo  = new PanelAbajo();
+		 add(abajo,BorderLayout.SOUTH);
 		 
 		
 			
@@ -45,7 +49,7 @@ public class VentanaPrincipal extends JFrame{
 		
 	        
 		
-	}
+	}//componentes
 	
 	
 	
