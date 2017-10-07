@@ -37,7 +37,7 @@ public class VentanaPrincipal extends JFrame{
 	}
 	public void componente() {
 		 registro = new RegistroUsuario(this);
-		 this.add(registro,BorderLayout.EAST);
+		 this.add(registro,BorderLayout.WEST);
 		 
 		
 			
