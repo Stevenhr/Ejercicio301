@@ -16,7 +16,7 @@ public class RegistroUsuario extends JPanel {
 			Insets inserciones;
 			setBackground(Color.WHITE);
 			
-			campo1=new JTextField ();
+			campo1=new JTextField ("nombre");
 			restriccion=new GridBagConstraints();
 			restriccion.gridx=0;
 			restriccion.gridy=0;
@@ -26,7 +26,7 @@ public class RegistroUsuario extends JPanel {
 			restriccion.insets=inserciones;
 			add(campo1,restriccion);
 			
-			campo2=new JTextField ();
+			campo2=new JTextField ("apellido");
 			restriccion=new GridBagConstraints();
 			restriccion.gridx=0;
 			restriccion.gridy=1;
@@ -35,7 +35,7 @@ public class RegistroUsuario extends JPanel {
 			restriccion.insets=inserciones;
 			add(campo2,restriccion);
 			
-			campo3=new JTextField ();
+			campo3=new JTextField ("cedula");
 			restriccion=new GridBagConstraints();
 			restriccion.gridx=0;
 			restriccion.gridy=2;
@@ -44,7 +44,7 @@ public class RegistroUsuario extends JPanel {
 			restriccion.insets=inserciones;
 			add(campo3,restriccion);
 			
-			campo4=new JTextField ();
+			campo4=new JTextField ("edad");
 			restriccion=new GridBagConstraints();
 			restriccion.gridx=0;
 			restriccion.gridy=3;
@@ -53,7 +53,7 @@ public class RegistroUsuario extends JPanel {
 			restriccion.insets=inserciones;
 			add(campo4,restriccion);
 			
-			campo5=new JTextField ();
+			campo5=new JTextField ("telefono");
 			restriccion=new GridBagConstraints();
 			restriccion.gridx=0;
 			restriccion.gridy=4;
@@ -62,7 +62,7 @@ public class RegistroUsuario extends JPanel {
 			restriccion.insets=inserciones;
 			add(campo5,restriccion);
 			
-			boton=new JButton ();
+			boton=new JButton ("Registrar");
 			restriccion=new GridBagConstraints();
 			restriccion.gridx=0;
 			restriccion.gridy=5;
